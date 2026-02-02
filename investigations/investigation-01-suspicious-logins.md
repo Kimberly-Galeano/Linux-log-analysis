@@ -40,6 +40,6 @@ No further investigation is required at this time.
 - Summarize normal vs suspicious patterns observed
 
 ## Evidence
-![Sudo activity](../screenshots/sudo-activity.png)
-![Sudo commands](../screenshots/sudo-commands.png)
+![Auth log recent activity](../screenshots/authlog-tail.png)
+![Failed password count](../screenshots/failed-password-count.png)
 

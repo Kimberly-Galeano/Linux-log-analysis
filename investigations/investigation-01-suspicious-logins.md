@@ -24,10 +24,15 @@ grep "Accepted password" /var/log/auth.log
 ```
 
 ## Findings
-- Work in progress — I will run the commands in my Ubuntu VM and update with results + screenshots.
+- A small number of failed password attempts were observed.
+- Failed login activity appeared limited and not repetitive.
+- Successful login activity matched expected user behavior.
+- No evidence of brute-force or unauthorized access was identified.
 
 ## Conclusion
-- Pending results. Will update after reviewing auth.log and syslog.
+Based on the review of authentication logs, no suspicious login activity was identified. 
+Observed failed login attempts were minimal and consistent with normal user behavior. 
+No further investigation is required at this time.
 
 ## Next Steps
 - Run log searches in Ubuntu VM
@@ -35,6 +40,7 @@ grep "Accepted password" /var/log/auth.log
 - Summarize normal vs suspicious patterns observed
 
 ## Evidence
-- ![Auth log recent activity](../screenshots/authlog-tail.png)
-- ![Failed password count](../screenshots/failed-password-count.png)
+- [Auth log recent activity](../authlog-tail.png)
+- [Failed password count](../failed-password-count.png)
+
 

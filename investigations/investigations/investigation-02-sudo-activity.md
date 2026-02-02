@@ -22,10 +22,14 @@ sudo grep "COMMAND=" /var/log/auth.log
 
 ```
 ## Findings
-- Work in progress. Results will be added after reviewing sudo-related activity.
+- Reviewed sudo-related events in auth.log.
+- Identified multiple sudo executions by the local user `kimberly`.
+- Commands executed included log review and system-related utilities (grep, tail, update-notifier).
+- All sudo activity appeared user-initiated and consistent with normal administrative tasks.
+- No unauthorized users or unusual command patterns were observed.
 
 ## Conclusion
-- Pending analysis. Will update after reviewing sudo command usage.
+Based on the review of sudo activity, no suspicious or unauthorized privileged command execution was identified. Observed sudo usage aligns with expected administrative behavior during system analysis. No escalation is required at this time.
 
 ## Next Steps
 - Run sudo-related log searches

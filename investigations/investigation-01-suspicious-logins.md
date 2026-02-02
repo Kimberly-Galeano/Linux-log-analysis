@@ -33,3 +33,8 @@ grep "Accepted password" /var/log/auth.log
 - Run log searches in Ubuntu VM
 - Add screenshots of outputs
 - Summarize normal vs suspicious patterns observed
+
+## Evidence
+- ![Auth log recent activity](../screenshots/authlog-tail.png)
+- ![Failed password count](../screenshots/failed-password-count.png)
+

@@ -17,21 +17,30 @@ Review local user accounts and login activity to identify any unauthorized or un
 3. Checked recent login activity
 4. Evaluated whether accounts and logins appeared expected
 
-## Commands Planned
+## Commands Used
 ```bash
 cat /etc/passwd
 grep "/bin/bash" /etc/passwd
 who
 last
+```
 
 ## Findings
-- Pending analysis. Results will be documented after reviewing local user accounts and login activity.
-- Findings will focus on identifying authorized users, login-capable accounts, and recent login behavior.
+- Reviewed local user accounts and identified two login-capable users.
+- Confirmed the active logged-in user was the local user `kimberly`.
+- Login history showed only expected user activity with no unknown or unauthorized users.
+- No evidence of suspicious user accounts or abnormal login behavior was observed.
 
 ## Conclusion
-- Pending review. A conclusion will be documented after evaluating user accounts and login history.
+Based on the review of user accounts and login activity, no unauthorized or suspicious user behavior was identified. All observed user accounts and login sessions were expected and consistent with normal system usage. No further action is required at this time.
 
 ## Next Steps
 - Run user and login-related commands in the Ubuntu VM
 - Capture screenshots of relevant command output
 - Determine whether any unauthorized or suspicious user accounts or login activity exist
+
+## Evidence
+![Login-capable users](../screenshots/login-capable-users.png)
+![Active user sessions](../screenshots/active-user-sessions.png)
+![Login history](../screenshots/login-history.png)
+
